@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "ja-jp">
+<head>
+    <title>投稿一覧</title>
+</head>
+<body>
+    <h1>ようこそ、Tsubasaのブログへ！</h1>
+
+    <h2>最新の投稿</h2>
+
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br /><br />
+        {{ post.published }}
+        <br /><br />
+        {{ post.body }}
+        <br /><br />
+    {% endfor %}
+</body>
+</html>
