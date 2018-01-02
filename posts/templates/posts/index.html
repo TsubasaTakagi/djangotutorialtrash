@@ -13,7 +13,8 @@
         <br /><br />
         {{ post.published }}
         <br /><br />
-        {{ post.body }}
+        <img src="{{ post.image.url }}" />
+        {{ post.summary }}
         <br /><br />
     {% endfor %}
 </body>
